@@ -78,6 +78,3 @@ The blockchain project aims to provide a decentralized platform that includes th
 - **Kadir Gökdeniz**
 - **Mehmet Bayram Alpay**
 - **Yusuf Batuhan Kılıçarslan**
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
