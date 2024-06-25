@@ -3,6 +3,17 @@
 ## Project Description
 This project involves the development of various smart contracts and related components. It includes modules for crowdfunding, identity management, supplier management, and voting management.
 
+### Detailed Description
+The blockchain project aims to provide a decentralized platform that includes the following components:
+
+1. **Crowdfunding**: A decentralized crowdfunding platform where organizers can create campaigns and participants can contribute funds. This ensures transparency and trust in the funding process.
+
+2. **Decentralized Identity (DID) Management**: A system for registering and managing decentralized identities. This allows users to have control over their identity and personal data without relying on a central authority.
+
+3. **Supplier Management**: A contract to manage suppliers, ensuring that only verified suppliers can participate in the platform. This includes mechanisms for registering suppliers and managing supplier-related activities.
+
+4. **Voting Management**: A robust voting system that allows participants to vote on various proposals. The voting process is transparent and secure, leveraging the immutability of blockchain.
+
 ## Technologies Used
 - Solidity
 - Ethereum Blockchain
