@@ -3,6 +3,8 @@
 ## Project Description
 This project involves the development of various smart contracts and related components. It includes modules for crowdfunding, identity management, supplier management, and voting management.
 
+In the proposal, potential security issues were addressed, and it was discussed why blockchain is more suitable for solving these problems compared to traditional applications. The final report provided a detailed explanation of the roles underlying the application and the functions they bring. The consensus protocols to be used were analyzed, and the project was implemented using Solidity.
+
 ### Detailed Description
 The blockchain project aims to provide a decentralized platform that includes the following components:
 
