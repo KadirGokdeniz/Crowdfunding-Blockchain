@@ -1,82 +1,117 @@
-# Blockchain Project
+# Blockchain Crowdfunding Platform
+
+A decentralized crowdfunding platform built on Ethereum blockchain technology, featuring identity management, supplier verification, and democratic voting systems.
+
+## Table of Contents
+- [Project Description](#project-description)
+- [Key Components](#key-components)
+- [Technologies Used](#technologies-used)
+- [Installation and Setup](#installation-and-setup)
+- [Smart Contracts](#smart-contracts)
+- [System Architecture](#system-architecture)
+- [Use Cases](#use-cases)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## Project Description
-This project involves the development of various smart contracts and related components. It includes modules for crowdfunding, identity management, supplier management, and voting management.
+This project implements a comprehensive decentralized platform for crowdfunding using blockchain technology. The system addresses traditional crowdfunding challenges through:
 
-In the proposal, potential security issues were addressed, and it was discussed why blockchain is more suitable for solving these problems compared to traditional applications. The final report provided a detailed explanation of the roles underlying the application and the functions they bring. The consensus protocols to be used were analyzed, and the project was implemented using Solidity.
+✔ Transparent fund management  
+✔ Decentralized identity verification  
+✔ Democratic governance mechanisms  
 
-### Detailed Description
-The blockchain project aims to provide a decentralized platform that includes the following components:
+Our implementation includes:
+- Detailed role definitions
+- Function specifications
+- Carefully selected consensus mechanisms
+- Solidity smart contracts
 
-1. **Crowdfunding**: A decentralized crowdfunding platform where organizers can create campaigns and participants can contribute funds. This ensures transparency and trust in the funding process.
+## Key Components
 
-2. **Decentralized Identity (DID) Management**: A system for registering and managing decentralized identities. This allows users to have control over their identity and personal data without relying on a central authority.
+### Crowdfunding System
+- Transparent campaign creation
+- Traceable fund contributions
+- Trustless execution via smart contracts
 
-3. **Supplier Management**: A contract to manage suppliers, ensuring that only verified suppliers can participate in the platform. This includes mechanisms for registering suppliers and managing supplier-related activities.
+### Decentralized Identity (DID) Management
+- User-controlled identity verification
+- No centralized authorities
+- Privacy-preserving design
 
-4. **Voting Management**: A robust voting system that allows participants to vote on various proposals. The voting process is transparent and secure, leveraging the immutability of blockchain.
+### Supplier Management
+- Verified supplier onboarding
+- Reputation tracking
+- Governance controls
+
+### Voting Management
+- Tamper-proof voting system
+- Immutable decision records
+- Transparent execution
 
 ## Technologies Used
-- Solidity
-- Ethereum Blockchain
-- Truffle Suite
-- Ganache
 
-## Installation and Setup Instructions
+| Technology | Purpose |
+|------------|---------|
+| Solidity | Smart contract development |
+| Ethereum | Blockchain infrastructure |
+| Truffle Suite | Development environment |
+| Ganache | Local Ethereum blockchain |
 
-### Requirements
-- Node.js and npm
-- Truffle
-- Ganache
+## Installation and Setup
 
-### Steps
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/username/blockchain-project.git
-    cd blockchain-project
-    ```
+### Prerequisites
+- Node.js (v12+)
+- npm
+- Truffle Suite (`npm install -g truffle`)
+- Ganache CLI/GUI
+- MetaMask wallet
 
-2. Install the necessary dependencies:
-    ```bash
-    npm install
-    ```
+### Setup
+```bash
+# Clone repository
+git clone https://github.com/username/blockchain-project.git
+cd blockchain-project
 
-3. Start Ganache and create a blockchain network.
+# Install dependencies
+npm install
 
-4. Compile and deploy the smart contracts:
-    ```bash
-    truffle compile
-    truffle migrate
-    ```
+# Start local blockchain (Ganache)
+ganache-cli -p 7545
 
-5. Run the tests:
-    ```bash
-    truffle test
-    ```
+# Compile and migrate contracts
+truffle compile
+truffle migrate --reset
 
-## Features
-- **Campaign.sol**: Smart contract to manage crowdfunding campaigns.
-- **Crowdfunding.sol**: General contract for community funding.
-- **DIDRegistry.sol**: Contract to manage decentralized identity records.
-- **SupplierManager.sol**: Smart contract to manage suppliers.
-- **VoteManager.sol**: Smart contract to manage voting processes.
+# Run tests
+truffle test
 
-## UML Diagrams
-- [Campaign UML](./UMLs/Campaign.png)
-- [Crowdfunding UML](./UMLs/Crowdfunding.png)
-- [DIDRegistry UML](./UMLs/DIDRegistry.png)
-- [SupplierManager UML](./UMLs/SupplierManager.png)
-- [VoteManager UML](./UMLs/VoteManager.png)
+# For frontend development
+cd client
+npm install
+npm start
+```
 
-## Use Cases
-- [DID Initialization and Registration](./Use-Cases/DID_initialization_and_registiration_to_DID.jpg)
-- [Registration as Organizer and Creating Campaign](./Use-Cases/regisitation_as_organizer_and_creatin_campaign.jpg)
-- [Registration as Participant and Contributing](./Use-Cases/registiration_as_participant_and_contribute.jpg)
-- [Registration as Supplier and Supplier Voting Algorithm](./Use-Cases/registiration_supplier_and_supplier_voting_algorithm.jpg)
-- [Suspicious Voting Algorithm](./Use-Cases/Suspicious_voting_algorithm.jpg)
-- [Time Over Voting and Refund Algorithm](./Use-Cases/Time_over_voting_and_refund_algorithm.jpg)
+# Smart Contracts
+- Contract	            Purpose
+- Campaign.sol	        Manages individual campaigns
+- Crowdfunding.sol	    Core coordination
+- DIDRegistry.sol	    Identity management
+- SupplierManager.sol	Supplier verification
+- VoteManager.sol	    Voting systems
+- System Architecture   System Architecture
 
-## Contributors
-- **Kadir Gökdeniz**
-- **Mehmet Bayram Alpay**
-- **Yusuf Batuhan Kılıçarslan**
+# Use Cases
+- DID Initialization: User identity registration
+- Campaign Creation: Organizer workflows
+- Contribution Flow: Participant interactions
+- Supplier Voting: Reputation management
+- Suspicious Activity: Dispute resolution
+- Refund Processing: Failed campaigns
+
+# Contributors
+- Kadir Gökdeniz
+- Mehmet Bayram Alpay
+- Yusuf Batuhan Kılıçarslan
+
+# License
+- MIT License - See LICENSE for details.
