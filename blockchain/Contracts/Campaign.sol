@@ -93,6 +93,11 @@ contract Campaign {
     function transferEth(uint campaignId,address payable supplierAddr, uint amount) external onlyOrganizer {
         require(address(this).balance >= amount, "Insufficient contract balance");
         require(supplierManager.getSupplier(campaignId,supplierAddr).isCandidate, "Candidate supplier cannot provide any service.");
+        
+        // Önce durumu güncelle
+        uint newBalance = address(this).balance - amount;
+        
+        // Sonra transfer yap (Checks-Effects-Interactions)
         supplierAddr.transfer(amount);
     }
 }
